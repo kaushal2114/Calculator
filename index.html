@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <input placeholder="num1" id="num1" type="number" />
+    <input placeholder="num2" id="num2" type="number" />
+    <input id="answer" placeholder="answer" type="number" />
+    <br /><br />
+    <div id="operation">
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="div()">/</button>
+        <button onclick="multiply()">*</button>
+    </div>
+    <script>
+        function add() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            const answer = document.getElementById("answer");
+            answer.value = parseInt(num1) + parseInt(num2);
+        }
+
+        function sub() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            const answer = document.getElementById("answer");
+            answer.value = parseInt(num1) - parseInt(num2);
+        }
+
+        function div() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            const answer = document.getElementById("answer");
+            answer.value = parseInt(num1) / parseInt(num2);
+        }
+
+        function multiply() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            const answer = document.getElementById("answer");
+            answer.value = parseInt(num1) * parseInt(num2);
+        }
+    </script>
+</body>
+
+</html>
